@@ -231,9 +231,14 @@ input::-webkit-inner-spin-button {
 
 .investment__another-amount:focus {
   outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-top: none;
+}
+
+input::placeholder {
   color: #000000;
+  opacity: 0.35;
 }
 
 .investment__radio-block-2 {
@@ -266,6 +271,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  opacity: 1;
 }
 
 .investment__checkbox {
