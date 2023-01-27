@@ -240,6 +240,7 @@ input::-webkit-inner-spin-button {
 }
 
 input::placeholder {
+  color: #000000;
   opacity: 0.35;
 }
 
