@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(/fonts/BasisGrotesquePro-Light.woff2) format(woff2);
+  src: url(/fonts/BasisGrotesquePro-Light.woff) format(woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(/fonts/BasisGrotesquePro-Medium.woff2) format(woff2);
+  src: url(/fonts/BasisGrotesquePro-Medium.woff) format(woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(/fonts/BasisGrotesquePro-Bold.woff2) format(woff2);
+  src: url(/fonts/BasisGrotesquePro-Bold.woff) format(woff);
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Basis Grotesque Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.heading_blue {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0536fc;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.text_light {
+  opacity: 0.6;
+}
+
+.text_deep_light {
+  opacity: 0.35;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.text_weight_300 {
+  font-weight: 300;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #0536fc;
+  padding: 16px 60px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  margin-bottom: 70px;
+}
