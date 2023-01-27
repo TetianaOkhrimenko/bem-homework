@@ -14,172 +14,192 @@
     <title>Investment section</title>
   </head>
   <body>
-    <section class="investment">
-      <div class="investment__text">
-        <p class="heading_blue">інвестиції</p>
-        <h3 class="investment__heading heading">
-          зробити <span>— інвестиції у програму</span>
-        </h3>
-      </div>
-
-      <div class="investment__payment-block">
-        <div class="investment__title">
-          <p class="text_bold">виберіть спосіб оплати</p>
+    <div class="container">
+      <section class="investment">
+        <div class="investment__text">
+          <p class="heading_blue">інвестиції</p>
+          <h3 class="investment__heading heading">
+            зробити <span>— інвестиції у програму</span>
+          </h3>
         </div>
 
-        <div class="investment__form">
-          <div class="investment__radio-block">
-            <div class="flex">
-              <label class="investment__label-radio text_light" for="bank_card">
-                Банківська карта
-              </label>
-              <input
-                class="investment__radion-btn"
-                type="radio"
-                name="payment"
-                id="bank_card"
-              />
-            </div>
-
-            <div class="flex">
-              <label class="investment__label-radio text_light" for="pay_pal">
-                PayPal
-              </label>
-              <input
-                class="investment__radion-btn"
-                type="radio"
-                name="payment"
-                id="pay_pal"
-              />
-            </div>
-
-            <div class="flex">
-              <label
-                class="investment__label-radio text_light"
-                for="bank_receipt"
-              >
-                Банківська платіжна квитанція
-              </label>
-              <input
-                class="investment__radion-btn"
-                type="radio"
-                name="payment"
-                id="bank_receipt"
-              />
-            </div>
+        <div class="investment__payment-block">
+          <div class="investment__title">
+            <p class="text_bold">виберіть спосіб оплати</p>
           </div>
 
-          <p class="text_bold mb-30">банківська карта</p>
-          <div class="investment__amount">
-            <label for="first_amount"></label>
-            <input
-              class="investment__amount-1"
-              type="radio"
-              name="amount"
-              id="first_amount"
-            />
+          <div class="investment__form">
+            <form action="#" method="GET">
+              <div class="investment__radio-block">
+                <div class="flex">
+                  <label
+                    class="investment__label-radio text_light"
+                    for="bank_card"
+                  >
+                    Банківська карта
+                  </label>
+                  <input
+                    class="investment__radion-btn"
+                    type="radio"
+                    name="payment"
+                    id="bank_card"
+                  />
+                </div>
 
-            <label for="second_amount"></label>
-            <input
-              class="investment__amount-2"
-              type="radio"
-              name="amount"
-              id="second_amount"
-            />
+                <div class="flex">
+                  <label
+                    class="investment__label-radio text_light"
+                    for="pay_pal"
+                  >
+                    PayPal
+                  </label>
+                  <input
+                    class="investment__radion-btn"
+                    type="radio"
+                    name="payment"
+                    id="pay_pal"
+                  />
+                </div>
 
-            <label for="third_amount"></label>
-            <input
-              class="investment__amount-3"
-              type="radio"
-              name="amount"
-              id="third_amount"
-            />
+                <div class="flex">
+                  <label
+                    class="investment__label-radio text_light"
+                    for="bank_receipt"
+                  >
+                    Банківська платіжна квитанція
+                  </label>
+                  <input
+                    class="investment__radion-btn"
+                    type="radio"
+                    name="payment"
+                    id="bank_receipt"
+                  />
+                </div>
+              </div>
 
-            <label for="fourth_amount"></label>
-            <input
-              class="investment__amount-4"
-              type="radio"
-              name="amount"
-              id="fourth_amount"
-            />
+              <p class="text_bold mb-30">банківська карта</p>
+
+              <div class="investment__amount-content">
+                <div class="investment__amount">
+                  <label for="first_amount"></label>
+                  <input
+                    class="investment__amount-1"
+                    type="radio"
+                    name="amount"
+                    id="first_amount"
+                  />
+
+                  <label for="second_amount"></label>
+                  <input
+                    class="investment__amount-2"
+                    type="radio"
+                    name="amount"
+                    id="second_amount"
+                  />
+
+                  <label for="third_amount"></label>
+                  <input
+                    class="investment__amount-3"
+                    type="radio"
+                    name="amount"
+                    id="third_amount"
+                  />
+
+                  <label for="fourth_amount"></label>
+                  <input
+                    class="investment__amount-4"
+                    type="radio"
+                    name="amount"
+                    id="fourth_amount"
+                  />
+                </div>
+                <label for="another-amount"></label>
+                <input
+                  class="investment__another-amount text_deep_light"
+                  type="text"
+                  placeholder="Інша сумма"
+                  name="another-amount"
+                  id="another-amount"
+                />
+              </div>
+              <div class="investment__radio-block-2">
+                <div class="flex">
+                  <label
+                    class="investment__label-radio text_light"
+                    for="every-month-pay"
+                  >
+                    Щомісячно
+                  </label>
+                  <input
+                    class="investment__radion-btn"
+                    type="radio"
+                    name="frequency"
+                    id="every-month-pay"
+                  />
+                </div>
+
+                <div class="flex">
+                  <label
+                    class="investment__label-radio text_light"
+                    for="once-pay"
+                  >
+                    Одноразово
+                  </label>
+                  <input
+                    class="investment__radion-btn"
+                    type="radio"
+                    name="frequency"
+                    id="once-pay"
+                  />
+                </div>
+              </div>
+
+              <div class="investment__entering-form">
+                <div class="flex flex-column">
+                  <label class="text_bold mb-20" for="name">ім’я</label>
+                  <input
+                    type="text"
+                    placeholder="Напишіть ваше ім’я"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+
+                <div class="flex flex-column">
+                  <label class="text_bold mb-20" for="email">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Напишіть ваше ім’я"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+              </div>
+
+              <div class="investment__checkbox">
+                <div class="flex">
+                  <input type="checkbox" name="checkbox" id="agreement-1" />
+                  <label for="agreement-1"
+                    >Я приймаю <a href="#">Договір оферти</a></label
+                  >
+                </div>
+
+                <div class="flex">
+                  <input type="checkbox" name="checkbox" id="agreement-2" />
+                  <label for="agreement-2"
+                    >Я приймаю
+                    <a href="#"
+                      >Угоду про використання персональних даних</a
+                    ></label
+                  >
+                </div>
+              </div>
+
+              <button class="btn" type="submit">відправити</button>
+            </form>
           </div>
-          <label for="another-amount"></label>
-          <input
-            class="investment__another-amount text_deep_light"
-            type="text"
-            placeholder="Інша сумма"
-            name="another-amount"
-            id="another-amount"
-          />
-
-          <div class="investment__radio-block-2">
-            <div class="flex">
-              <label
-                class="investment__label-radio text_light"
-                for="every-month-pay"
-              >
-                Щомісячно
-              </label>
-              <input
-                class="investment__radion-btn"
-                type="radio"
-                name="frequency"
-                id="every-month-pay"
-              />
-            </div>
-
-            <div class="flex">
-              <label class="investment__label-radio text_light" for="once-pay">
-                Одноразово
-              </label>
-              <input
-                class="investment__radion-btn"
-                type="radio"
-                name="frequency"
-                id="once-pay"
-              />
-            </div>
-          </div>
-
-          <div class="investment__entering-form">
-            <div class="flex flex-column">
-              <label class="text_bold mb-20" for="name">ім’я</label>
-              <input
-                type="text"
-                placeholder="Напишіть ваше ім’я"
-                name="name"
-                id="name"
-              />
-            </div>
-
-            <div class="flex flex-column">
-              <label class="text_bold mb-20" for="email">Email</label>
-              <input
-                type="email"
-                placeholder="Напишіть ваше ім’я"
-                name="email"
-                id="email"
-              />
-            </div>
-          </div>
-
-          <div class="investment__checkbox">
-            <div class="flex">
-              <input type="checkbox" name="checkbox" id="agreement-1" />
-              <label for="agreement-1">Я приймаю Договір оферти</label>
-            </div>
-
-            <div class="flex">
-              <input type="checkbox" name="checkbox" id="agreement-2" />
-              <label for="agreement-2"
-                >Я приймаю Угоду про використання персональних даних</label
-              >
-            </div>
-          </div>
-
-          <button class="btn" type="submit">відправити</button>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
