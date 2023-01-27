@@ -220,6 +220,12 @@ img {
   margin-bottom: 20px;
 }
 
+.investment__another-amount:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-top: none;
+}
+
 .investment__radio-block-2 {
   display: grid;
   grid-template-columns: 113px 125px;
