@@ -206,6 +206,10 @@ img {
   color: #ffffff;
 }
 
+.investment__amount input[type="radio"]:nth-child(-n + 6) {
+  border-right: none;
+}
+
 /* Hide the Number Input’s Arrow*/
 
 input::-webkit-outer-spin-button,
@@ -217,14 +221,13 @@ input::-webkit-inner-spin-button {
   /*appearance: none;
   margin: 0;*/
   font-family: "Basis Grotesque Pro";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.03em;
   padding: 13px 0 12px 35px;
   width: 640px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-top: none;
   margin-bottom: 20px;
 }
@@ -237,9 +240,9 @@ input::-webkit-inner-spin-button {
 }
 
 input::placeholder {
-  color: #000000;
-  /*opacity: 0.35;*/
+  opacity: 0.35;
 }
+
 input:focus::placeholder {
   opacity: 0.35;
 }
@@ -265,7 +268,6 @@ input:focus::placeholder {
   line-height: 24px;
   letter-spacing: -0.03em;
   color: #000000;
-  opacity: 0.35;
   padding-bottom: 5px;
   margin-bottom: 30px;
 }
