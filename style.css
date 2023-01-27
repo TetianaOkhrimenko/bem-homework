@@ -67,6 +67,7 @@ img {
 
 .text_bold {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .text_weight_300 {
@@ -83,5 +84,60 @@ img {
   font-weight: 700;
   font-size: 38px;
   line-height: 42px;
+  text-transform: uppercase;
   margin-bottom: 70px;
+}
+
+.investment {
+}
+
+.investment__text {
+  display: grid;
+  grid-template-columns: 50%;
+  padding: 150px 0 0 210px;
+}
+
+.investment__title {
+  padding-left: 210px;
+}
+
+.investment__heading span {
+  display: block;
+}
+
+.investment__payment-block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.investment__label-radio {
+  order: 2;
+}
+
+.investment__radion-btn {
+  margin-right: 15px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-clip: content-box;
+}
+
+input[type="radio"]:checked {
+  background-color: #0536fc;
+}
+
+.investment__form {
+  display: grid;
+  grid-template-columns: 155px 82px 250px;
+  gap: 30px;
+}
+
+.grid {
+  display: flex;
 }
