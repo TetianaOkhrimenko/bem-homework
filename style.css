@@ -128,7 +128,7 @@ img {
 
 .investment__payment-block {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 45% 55%;
 }
 
 .investment__label-radio {
@@ -206,7 +206,16 @@ img {
   color: #ffffff;
 }
 
+/* Hide the Number Input’s Arrow*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .investment__another-amount {
+  /*appearance: none;
+  margin: 0;*/
   font-family: "Basis Grotesque Pro";
   font-style: normal;
   font-weight: 400;
@@ -224,6 +233,7 @@ img {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-top: none;
+  color: #000000;
 }
 
 .investment__radio-block-2 {
