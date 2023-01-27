@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script
+      src="https://kit.fontawesome.com/3a59da4b6c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="/style.css" />
     <title>Investment section</title>
   </head>
@@ -23,44 +28,156 @@
         </div>
 
         <div class="investment__form">
-          <div class="grid">
-            <label class="investment__label-radio text_light" for="bank_card">
-              Банківська карта
-            </label>
-            <input
-              class="investment__radion-btn"
-              type="radio"
-              name="payment"
-              id="bank_card"
-            />
+          <div class="investment__radio-block">
+            <div class="flex">
+              <label class="investment__label-radio text_light" for="bank_card">
+                Банківська карта
+              </label>
+              <input
+                class="investment__radion-btn"
+                type="radio"
+                name="payment"
+                id="bank_card"
+              />
+            </div>
+
+            <div class="flex">
+              <label class="investment__label-radio text_light" for="pay_pal">
+                PayPal
+              </label>
+              <input
+                class="investment__radion-btn"
+                type="radio"
+                name="payment"
+                id="pay_pal"
+              />
+            </div>
+
+            <div class="flex">
+              <label
+                class="investment__label-radio text_light"
+                for="bank_receipt"
+              >
+                Банківська платіжна квитанція
+              </label>
+              <input
+                class="investment__radion-btn"
+                type="radio"
+                name="payment"
+                id="bank_receipt"
+              />
+            </div>
           </div>
 
-          <div class="grid">
-            <label class="investment__label-radio text_light" for="pay_pal">
-              PayPal
-            </label>
+          <p class="text_bold mb-30">банківська карта</p>
+          <div class="investment__amount">
+            <label for="first_amount"></label>
             <input
-              class="investment__radion-btn"
+              class="investment__amount-1"
               type="radio"
-              name="payment"
-              id="pay_pal"
+              name="amount"
+              id="first_amount"
             />
+
+            <label for="second_amount"></label>
+            <input
+              class="investment__amount-2"
+              type="radio"
+              name="amount"
+              id="second_amount"
+            />
+
+            <label for="third_amount"></label>
+            <input
+              class="investment__amount-3"
+              type="radio"
+              name="amount"
+              id="third_amount"
+            />
+
+            <label for="fourth_amount"></label>
+            <input
+              class="investment__amount-4"
+              type="radio"
+              name="amount"
+              id="fourth_amount"
+            />
+          </div>
+          <label for="another-amount"></label>
+          <input
+            class="investment__another-amount text_deep_light"
+            type="text"
+            placeholder="Інша сумма"
+            name="another-amount"
+            id="another-amount"
+          />
+
+          <div class="investment__radio-block-2">
+            <div class="flex">
+              <label
+                class="investment__label-radio text_light"
+                for="every-month-pay"
+              >
+                Щомісячно
+              </label>
+              <input
+                class="investment__radion-btn"
+                type="radio"
+                name="frequency"
+                id="every-month-pay"
+              />
+            </div>
+
+            <div class="flex">
+              <label class="investment__label-radio text_light" for="once-pay">
+                Одноразово
+              </label>
+              <input
+                class="investment__radion-btn"
+                type="radio"
+                name="frequency"
+                id="once-pay"
+              />
+            </div>
           </div>
 
-          <div class="grid">
-            <label
-              class="investment__label-radio text_light"
-              for="bank_receipt"
-            >
-              Банківська платіжна квитанція
-            </label>
-            <input
-              class="investment__radion-btn"
-              type="radio"
-              name="payment"
-              id="bank_receipt"
-            />
+          <div class="investment__entering-form">
+            <div class="flex flex-column">
+              <label class="text_bold mb-20" for="name">ім’я</label>
+              <input
+                type="text"
+                placeholder="Напишіть ваше ім’я"
+                name="name"
+                id="name"
+              />
+            </div>
+
+            <div class="flex flex-column">
+              <label class="text_bold mb-20" for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Напишіть ваше ім’я"
+                name="email"
+                id="email"
+              />
+            </div>
           </div>
+
+          <div class="investment__checkbox">
+            <div class="flex">
+              <input type="checkbox" name="checkbox" id="agreement-1" />
+              <label for="agreement-1">Я приймаю Договір оферти</label>
+            </div>
+
+            <div class="flex">
+              <input type="checkbox" name="checkbox" id="agreement-2" />
+              <label for="agreement-2"
+                >Я приймаю Угоду про використання персональних даних</label
+              >
+            </div>
+          </div>
+
+          <button class="btn" type="submit">відправити</button>
         </div>
       </div>
     </section>
