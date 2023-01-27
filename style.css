@@ -90,6 +90,10 @@ img {
   margin-bottom: 20px;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -109,14 +113,13 @@ img {
   cursor: pointer;
 }
 
+.investment {
+  padding: 150px 0 150px 210px;
+}
+
 .investment__text {
   display: grid;
   grid-template-columns: 50%;
-  padding: 150px 0 0 210px;
-}
-
-.investment__title {
-  padding-left: 210px;
 }
 
 .investment__heading span {
@@ -133,10 +136,6 @@ img {
 }
 
 .investment__radion-btn {
-  margin-right: 15px;
-}
-
-.investment__radion-btn {
   appearance: none;
   width: 20px;
   height: 20px;
@@ -144,6 +143,7 @@ img {
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-clip: content-box;
+  margin-right: 15px;
 }
 
 .investment__radion-btn:checked {
@@ -155,10 +155,6 @@ img {
   grid-template-columns: 155px 82px 250px;
   gap: 30px;
   margin-bottom: 48px;
-}
-
-.flex {
-  display: flex;
 }
 
 .investment__amount-content {
@@ -222,12 +218,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-top: none;
   margin-bottom: 20px;
-}
-
-.investment__another-amount:focus
-  .investment__amount
-  input[type="radio"]:checked {
-  background-color: red;
 }
 
 .investment__radio-block-2 {
@@ -309,7 +299,7 @@ img {
 }
 
 @media (max-width: 600px) {
-  .container {
+  .investment {
     padding: 1rem;
   }
 
@@ -321,12 +311,12 @@ img {
   }
 
   .btn {
+    display: block;
     margin: 0 auto;
   }
 
   .investment__text {
     grid-template-columns: 100%;
-    padding: 0;
     text-align: center;
   }
 
@@ -335,7 +325,6 @@ img {
   }
 
   .investment__title {
-    padding-left: 0;
     text-align: center;
     padding-bottom: 1rem;
   }
@@ -372,6 +361,10 @@ img {
     width: 50%;
   }
 
+  .investment__entering-form {
+    width: 100%;
+  }
+
   .investment__radio-block-2 {
     margin-bottom: 1rem;
     grid-template-columns: 50% 50%;
@@ -384,7 +377,7 @@ img {
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .container {
+  .investment {
     padding: 2rem;
   }
 
@@ -398,11 +391,9 @@ img {
   .investment__text {
     display: grid;
     grid-template-columns: 100%;
-    padding: 0;
   }
 
   .investment__title {
-    padding-left: 0;
     padding-bottom: 1rem;
   }
 
