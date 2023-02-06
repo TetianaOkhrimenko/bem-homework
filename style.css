@@ -82,12 +82,16 @@ img {
   margin-bottom: 70px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
 
-.mb-20 {
-  margin-bottom: 20px;
+.mb-150 {
+  margin-bottom: 150px;
 }
 
 .flex {
@@ -111,6 +115,113 @@ img {
   padding: 16px 60px;
   border: none;
   cursor: pointer;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  height: 4.375rem; /*70px*/
+  padding: 1.5rem 3.125rem; /*24px 50px 23px 50px;*/
+}
+
+.nav .logo-content {
+  display: flex;
+}
+
+.nav .logo-content p {
+  font-weight: 300;
+  opacity: 0.35;
+}
+
+.nav .logo-content img {
+  margin-right: 0.625rem; /*10px;*/
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.nav li {
+  display: flex;
+  justify-self: flex-end;
+  text-transform: uppercase;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.nav li:hover {
+  color: #0536fc;
+}
+
+.nav li:hover .arrow {
+  border-right: 1px solid #0536fc;
+  border-bottom: 1px solid #0536fc;
+}
+
+.nav a {
+  align-self: center;
+}
+
+.wrapper-arrow {
+  padding: 5px 10px 10px 10px;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.arrow:hover {
+  border-right: 1px solid #0536fc;
+  border-bottom: 1px solid #0536fc;
+}
+
+.for-partners__block {
+  padding: 100px 0 0 210px;
+}
+
+.for-partners__heading {
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 59px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  width: 35%;
+}
+
+.for-partners__icon {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.for-partners__button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.for-partners__btn {
+  background: #ffffff;
+  color: #0536fc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+  transition: all 400ms ease-in-out;
+}
+
+.for-partners__btn:hover {
+  background: #0536fc;
+  color: #ffffff;
+  border: none;
 }
 
 .investment {
