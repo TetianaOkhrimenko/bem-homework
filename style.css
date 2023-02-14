@@ -125,7 +125,7 @@ img {
   color: #ffffff;
   background: #0536fc;
   padding: 16px 60px;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   transition: all 400ms ease-in-out;
 }
@@ -526,6 +526,10 @@ footer .text-content {
   text-decoration: none;
 }
 
+.footer-item a:hover {
+  outline: 1px dotted;
+}
+
 .footer-item a:focus {
   outline: 2px solid hsl(249, 75%, 39%);
   box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
@@ -577,9 +581,14 @@ footer .text-content {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #0536fc;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 16px 60px;
+  transition: all 400ms ease-in-out;
+}
+
+.footer-btn:hover {
+  border: 1px solid #ffffff;
 }
 
 .footer-btn:focus-visible {
