@@ -127,6 +127,22 @@ img {
   padding: 16px 60px;
   border: none;
   cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.btn:hover {
+  color: #0536fc;
+  background: #ffffff;
+  border: 2px solid #0536fc;
+}
+
+.btn:focus-visible {
+  outline: 2px dashed gray;
+}
+
+.btn:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
 }
 
 .nav {
@@ -235,6 +251,15 @@ img {
   border: none;
 }
 
+.for-partners__btn:focus-visible {
+  outline: 2px dashed gray;
+}
+
+.for-partners__btn:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
+}
+
 .investment {
   padding: 150px 0 150px 210px;
 }
@@ -307,6 +332,11 @@ img {
   padding: 13px;
 }
 
+.investment__amount input[type="radio"]:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
+}
+
 .investment__amount-1::after {
   content: "50 000";
 }
@@ -359,6 +389,7 @@ input::-webkit-inner-spin-button {
   opacity: 1;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-top: none;
+  background-color: #9ac1eb;
 }
 
 input::placeholder {
@@ -400,6 +431,7 @@ input:focus::placeholder {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   opacity: 1;
+  background-color: #9ac1eb;
 }
 
 .investment__checkbox {
@@ -494,6 +526,16 @@ footer .text-content {
   text-decoration: none;
 }
 
+.footer-item a:focus {
+  outline: 2px solid hsl(249, 75%, 39%);
+  box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
+}
+
+.footer-item a:focus-visible {
+  outline: 2px solid hsl(249, 75%, 39%);
+  box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
+}
+
 .footer-form input {
   background-color: #0536fc;
   opacity: 0.55;
@@ -523,6 +565,7 @@ footer .text-content {
   outline: none;
   border: none;
   border-bottom: 1px solid #b9b9b9;
+  background-color: #9ac1eb;
 }
 
 .footer-btn {
@@ -536,6 +579,16 @@ footer .text-content {
   background-color: #0536fc;
   border: none;
   cursor: pointer;
+  padding: 10px 20px;
+}
+
+.footer-btn:focus-visible {
+  outline: 2px dashed gray;
+}
+
+.footer-btn:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(1, 1, 0, 0.7);
 }
 
 .footer-down {
